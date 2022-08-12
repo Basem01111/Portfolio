@@ -1,0 +1,80 @@
+body {
+    font-family: "Tajawal", sans-serif;
+}
+
+/*---------------- Start Nav ---------------- */
+nav .nav-link::before {
+    left: unset;
+    right: 0;
+}
+nav .lang a::before {
+    right: unset;
+    left: -0.5rem;
+}
+/*---------------- End Nav ---------------- */
+
+/*---------------- Start Home ---------------- */
+.home .badge {
+    font-family: "Quicksand", sans-serif;
+}
+.home h1 {
+    border-right: none;
+    border-left: 3px solid rgb(255 255 255 / 80%);
+    animation: control-width 3s steps(13) 0.5s both, blink 1s infinite;
+    width: 261px;
+}
+/*---------------- End Home ---------------- */
+
+/*---------------- Start About ---------------- */
+.about .box-img::before {
+    right: unset;
+    left: -30px;
+}
+.about h5 {
+    font-family: "Quicksand", sans-serif;
+}
+.about ul::before {
+    left: unset;
+    right: 9px;
+}
+.about ul li::before {
+    left: unset;
+    right: 3px;
+}
+/*---------------- End About ---------------- */
+
+/*---------------- Start Portfolio ---------------- */
+.portfolio .info::before {
+    content: "زيارة";
+    right: unset;
+    left: 100%;
+}
+.portfolio .all:hover .info::before {
+    right: unset;
+    left: 0;
+}
+/*---------------- End Portfolio ---------------- */
+
+/*---------------- Start Footer ---------------- */
+footer {
+    font-family: "Quicksand", sans-serif;
+}
+/*---------------- End Footer ---------------- */
+
+/*---------------- Animition ---------------- */
+@keyframes control-width {
+    from {
+        width: 0;
+    }
+    to {
+        width: 261px;
+    }
+}
+@keyframes blink {
+    from {
+        border-left: none;
+    }
+    to {
+        border-left: solid;
+    }
+}
